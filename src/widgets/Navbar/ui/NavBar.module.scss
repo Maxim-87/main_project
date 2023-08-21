@@ -1,0 +1,20 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: var(--navbar-height);
+  padding: 20px;
+  background: var(--inverted-bg-color);
+}
+
+.links {
+}
+
+.mainLink {
+  margin-right: 20px;
+}
+
+.buttonSwitch {
+  margin-left: 20px;
+}

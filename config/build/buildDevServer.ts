@@ -6,5 +6,6 @@ export function buildDevServer(options: BuildOptions): DevServerConfiguration {
         port: options.port,
         open: true, // auto open App in browser
         historyApiFallback: true,
+        hot: true,
     }
 }
