@@ -12,14 +12,15 @@ export const LangSwitcher = ({className}: LangSwitcherProps) => {
     const {t, i18n} = useTranslation();
 
     const changeLanguage = () => {
-        i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
+        i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en');
+        console.log("changedLang",i18n.language)
     }
     return (
         <Button
             className={classNames(styles.langSwitcher, {}, [className])}
             theme={ThemeButton.CLEAR}
             onClick={changeLanguage}>
-            {t('Язык')}
+            {i18n.language === 'en' ? 'русский' : 'english'}
         </Button>
     );
 };
